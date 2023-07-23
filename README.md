@@ -22,6 +22,25 @@ The application is built using Next.js, TypeScript, and Zustand for state manage
 
 Instructions for setting up the project locally are provided in the README. You will need to provide your own Giphy API key in a `.env` file.
 
+1. Clone the repository to your local machine using `git clone https://github.com/AnasBoulmane/giphy-api-assignment.git`
+
+2. Navigate to the project directory using `cd giphy-api-assignment`
+
+3. Install the required dependencies using `npm install`
+
+4. Create a `.env` file in the root directory of the project and add your Giphy API key as follows:
+   ```
+   NEXT_PUBLIC_GIPHY_API_KEY=your_giphy_api_key
+   ```
+
+5. To start the development server, run `npm run dev`. This will start the server on `http://localhost:3000`.
+
+6. To build the application for production, run `npm run build`. This will create a `.next` directory with the built application.
+
+7. To start the application in production mode, first build the application using `npm run build`, then start the server using `npm start`. The application will be available on `http://localhost:3000`.
+
+Please ensure you have Node.js and npm installed on your machine before following these instructions.
+
 ## Live Demo
 
 A live demo of the application is available at [link-to-live-demo](https://giphy-api-assignment.vercel.app/).
