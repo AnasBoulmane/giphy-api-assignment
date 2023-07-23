@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useGiphyImagesStore } from "@/stores/giphy-images-store"
 import { Button } from "./ui/button"
+import { ImageItem } from "./image-item"
 
 export function ImageList() {
   const [loadedImages, setLoadedImages] = useState(0)
@@ -15,7 +16,7 @@ export function ImageList() {
   return (
     <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
       {images.map((url, index) => (
-        <img
+        <ImageItem
           key={index}
           src={url}
           alt=""
