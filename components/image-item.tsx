@@ -23,10 +23,7 @@ export function ImageItem({ className, ...props }: ImageItemProps) {
         })}
       />
       {!isLoaded && (
-        <Skeleton
-          className="min-h-72 h-full w-full"
-          aria-label="loading image"
-        />
+        <Skeleton className="w-full pt-[100%]" aria-label="loading image" />
       )}
     </div>
   )
